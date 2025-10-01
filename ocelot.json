@@ -1,0 +1,45 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/vehicles/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "vehicle_service_app",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/vehicles/{everything}",
+      "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Patch"]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/auth/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "user_service_app",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/auth/{everything}",
+      "UpstreamHttpMethod": ["Post"]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/users/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "user_service_app",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/users/{everything}",
+      "UpstreamHttpMethod": ["Get", "Put", "Delete", "Patch"]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://api_gateway:8080"
+  }
+}
