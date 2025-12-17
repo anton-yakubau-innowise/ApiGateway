@@ -37,6 +37,45 @@
       ],
       "UpstreamPathTemplate": "/gateway/users/{everything}",
       "UpstreamHttpMethod": ["Get", "Put", "Delete", "Patch"]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/showrooms/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "showroom_service_app",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/showrooms/{everything}",
+      "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Patch"]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/orders/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "sales_service_app",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/orders/{everything}",
+      "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Patch"]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/notifications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "notification_service_app",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/notifications/{everything}",
+      "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Patch"]
     }
   ],
   "GlobalConfiguration": {
