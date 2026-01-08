@@ -5,8 +5,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "vehicle_service_app",
-          "Port": 8080
+          "Host": "vehicle-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/vehicles/{everything}",
@@ -18,8 +18,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "user_service_app",
-          "Port": 8080
+          "Host": "user-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/auth/{everything}",
@@ -31,8 +31,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "user_service_app",
-          "Port": 8080
+          "Host": "user-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/users/{everything}",
@@ -44,8 +44,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "showroom_service_app",
-          "Port": 8080
+          "Host": "showroom-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/showrooms/{everything}",
@@ -57,8 +57,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "sales_service_app",
-          "Port": 8080
+          "Host": "sales-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/orders/{everything}",
@@ -70,8 +70,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "notification_service_app",
-          "Port": 8080
+          "Host": "notification-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/notifications/{everything}",
