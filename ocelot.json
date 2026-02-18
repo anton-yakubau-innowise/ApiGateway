@@ -9,6 +9,7 @@
           "Port": 8080
         }
       ],
+      "DownstreamHttpVersion": "2.0",
       "UpstreamPathTemplate": "/gateway/vehicles/{everything}",
       "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Patch"]
     },
@@ -22,6 +23,7 @@
           "Port": 8080
         }
       ],
+      "DownstreamHttpVersion": "2.0",
       "UpstreamPathTemplate": "/gateway/auth/{everything}",
       "UpstreamHttpMethod": ["Post"]
     },
@@ -35,6 +37,7 @@
           "Port": 8080
         }
       ],
+      "DownstreamHttpVersion": "2.0",
       "UpstreamPathTemplate": "/gateway/users/{everything}",
       "UpstreamHttpMethod": ["Get", "Put", "Delete", "Patch"]
     },
