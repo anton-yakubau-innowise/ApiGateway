@@ -45,7 +45,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "showroom-service",
-          "Port": 8080
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/showrooms/{everything}",
@@ -58,7 +58,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "sales-service",
-          "Port": 8080
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/orders/{everything}",
@@ -71,7 +71,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "notification-service",
-          "Port": 8080
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/gateway/notifications/{everything}",
