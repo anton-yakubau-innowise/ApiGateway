@@ -10,6 +10,7 @@
         }
       ],
       "DownstreamHttpVersion": "2.0",
+      "DownstreamHttpVersionPolicy": "RequestVersionExact",
       "UpstreamPathTemplate": "/gateway/vehicles/{everything}",
       "UpstreamHttpMethod": ["Get", "Post", "Put", "Delete", "Patch"]
     },
@@ -24,6 +25,7 @@
         }
       ],
       "DownstreamHttpVersion": "2.0",
+      "DownstreamHttpVersionPolicy": "RequestVersionExact",
       "UpstreamPathTemplate": "/gateway/auth/{everything}",
       "UpstreamHttpMethod": ["Post"]
     },

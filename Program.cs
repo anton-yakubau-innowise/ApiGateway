@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 var WebAppCorsPolicy = "WebAppCorsPolicy";
 
+AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: WebAppCorsPolicy,
