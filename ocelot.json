@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "vehicle-service",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/gateway/vehicles/{everything}",
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "user-service",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/gateway/auth/{everything}",
@@ -32,7 +32,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "user-service",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/gateway/users/{everything}",
@@ -45,7 +45,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "showroom-service",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/gateway/showrooms/{everything}",
@@ -58,7 +58,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "sales-service",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/gateway/orders/{everything}",
@@ -71,7 +71,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "notification-service",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/gateway/notifications/{everything}",
